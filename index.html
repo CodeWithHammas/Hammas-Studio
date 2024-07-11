@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hammas Studio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+</head>
+<body class="bg-[#34353A] text-[#F9F9F9]">
+  <nav class="p-4 md:mx-32 md:py-8 grid-cols-1 grid md:grid-cols-2 lg:grid-cols-3 items-center">
+    <img class="rounded-full" src="assets/Logo.png" alt="logo image">
+    <div id="nav-links" class="hidden lg:flex gap-6">
+      <a class="opacity-100" href="#">Home</a>
+      <a class="opacity-60 hover:opacity-100 transition-opacity ease-in-out" href="#">About</a>
+      <a class="opacity-60 hover:opacity-100 transition-opacity ease-in-out" href="#">Skills</a>
+      <a class="opacity-60 hover:opacity-100 transition-opacity ease-in-out" href="#">Portfolio</a>
+      <a class="opacity-60 hover:opacity-100 transition-opacity ease-in-out" href="#">Contact</a>
+    </div>
+    <div class="hidden min-w-32 px-5 py-3 md:flex justify-end justify-items-end">
+      <label class="input input-sm input-bordered flex items-center gap-2">
+        <input type="text" class=" grow" placeholder="Search" />
+        <i class="w-4 h-4" data-lucide="search"></i>
+      </label>
+    </div>
+  </nav>
+  <main>
+    <section id="home" class="p-4 md:mx-32 min-h-screen flex items-center">
+      <div id="socials" class="right-4 z-10 absolute bottom-6 md:right-24 flex flex-col items-center gap-4">
+        <span class="block h-32 w-1 rounded-lg bg-[#FFC86B]"></span>
+        <a href="https://www.facebook.com/profile.php?id=61556705486440&sk=photos"><i class="w-6 h-6" data-lucide="facebook"></i></a>
+        <a href="https://www.instagram.com/its_hammas_47?igsh=MWZwMjlib2c5azdzOA=="><i class="w-6 h-6" data-lucide="instagram"></i></a>
+        <a href=""><i class="w-6 h-6" data-lucide="linkedin"></i></a>
+        <a href="https://wa.me/<03358476336>"><i class="w-6 h-6" data-lucide="message-circle-dashed"></i></a>
+      </div>
+      <div class="flex flex-col gap-4 items-start">
+        <h3 class="text-3xl">Hey there,</h3>
+        <h1 class="text-5xl font-black">I am <span class="text-[#FFC86B]">Hammas Shah</span></h1>
+        <h3 class="text-3xl"> Designer &amp; Web Developer</h3>
+       <a href="https://wa.me/<03358476336>"> <button class="btn btn-outline text-white border-2 border-[#FFC86B] hover:bg-[#FFC86B] hover:text-black hover:border-transparent">Contact Me</button></a>
+      </div>
+      <!-- <img class="hidden lg:block absolute right-40 bottom-0 -z-0 grayscale w-[480px]" src="assets/portrait.png" alt="self portrait"> -->
+      <img class="hidden lg:block absolute w-[60%] h-full object-cover rounded-tl-[150px] right-0 -z-10 grayscale" src="assets/Personai.png" alt="self portrait">
+    </section>
+
+    <section id="about" class="p-4 md:mx-32 my-12">
+      <h2 class="text-4xl my-6 font-bold">About</h2>
+      <div class="flex items-start justify-stretch">
+        <div class="hidden md:block w-32 rounded-2xl h-1 bg-[#FFC86B]"></div>
+        <p>
+          Hammas Shah is a skilled Web Developer and Graphic Designer with a passion for creating visually appealing and functional digital experiences. In addition to his professional talents, Hammas enjoys playing football in his free time, finding inspiration and motivation from his idol, Cristiano Ronaldo. His dedication to both his craft and his hobbies showcases a balanced and dynamic personality, always striving for excellence on the field and in his work.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="p-4 md:mx-32 my-12">
+      <h2 class="text-4xl my-6 font-bold text-center ">Skills</h2>
+      <div id="cards-container" class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 *:rounded-2xl *:overflow-clip">
+        <div class="group h-[240px] bg-[#3D3E42] text-white flex flex-col gap-6 justify-center items-center hover:bg-[#FFC86B]/[0.9] transition-all cursor-pointer">
+          <img class="w-32 grayscale aspect-square object-contain group-hover:grayscale-0 transition-all" src="assets/html.png" alt="skill logo">
+          <p class="text-lg font-bold">HTML</p>
+        </div>
+        <div class="group h-[240px] bg-[#3D3E42] text-white flex flex-col gap-6 justify-center items-center hover:bg-[#FFC86B]/[0.9] transition-all cursor-pointer">
+          <img class="w-32 grayscale aspect-square object-contain group-hover:grayscale-0 transition-all" src="assets/css.png" alt="skill logo">
+          <p class="text-lg font-bold">CSS</p>
+        </div>
+        <div class="group h-[240px] bg-[#3D3E42] text-white flex flex-col gap-6 justify-center items-center hover:bg-[#FFC86B]/[0.9] transition-all cursor-pointer">
+          <img class="w-32 grayscale aspect-square object-contain group-hover:grayscale-0 transition-all" src="assets/js.png" alt="skill logo">
+          <p class="text-lg font-bold">JavaScript</p>
+        </div>
+        <div class="group h-[240px] bg-[#3D3E42] text-white flex flex-col gap-6 justify-center items-center hover:bg-[#FFC86B]/[0.9] transition-all cursor-pointer">
+          <img class="w-32 grayscale aspect-square object-contain group-hover:grayscale-0 transition-all" src="assets/figma.png" alt="skill logo">
+          <p class="text-lg font-bold">Figma</p>
+        </div>
+        <div class="group h-[240px] bg-[#3D3E42] text-white flex flex-col gap-6 justify-center items-center hover:bg-[#FFC86B]/[0.9] transition-all cursor-pointer">
+          <img class="w-32 grayscale aspect-square object-contain group-hover:grayscale-0 transition-all" src="assets/Photoshop.png" alt="skill logo">
+          <p class="text-lg font-bold">Adobe Photoshop</p>
+        </div>
+        <div class="group h-[240px] bg-[#3D3E42] text-white flex flex-col gap-6 justify-center items-center hover:bg-[#FFC86B]/[0.9] transition-all cursor-pointer">
+          <img class="w-32 grayscale aspect-square object-contain group-hover:grayscale-0 transition-all" src="assets/Illistator.png" alt="skill logo">
+          <p class="text-lg font-bold">Adobe Illustrator</p>
+        </div>
+        <div class="group h-[240px] bg-[#3D3E42] text-white flex flex-col gap-6 justify-center items-center hover:bg-[#FFC86B]/[0.9] transition-all cursor-pointer">
+          <img class="w-32 grayscale aspect-square object-contain group-hover:grayscale-0 transition-all" src="assets/After Effects1.png" alt="skill logo">
+          <p class="text-lg font-bold">Adobe After Effects</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="p-4 md:mx-32 my-12">
+      <h2 class="text-4xl mb-6 font-bold  text-center">Portfolio</h2>
+      <div id="portfolio-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="relative group">
+          <img class="w-full h-full" src="assets/Pro/real.jpg" alt="">
+          <div class="top-0 absolute w-full h-full bg-black opacity-0 group-hover:opacity-70 transition-all ease-linear flex flex-col justify-center items-center p-4 gap-4">
+            <p class="font-bold text-white text-2xl">E-Estate</p>
+            <p class="text-white text-center">Just For Practice in Photoshop. </p>
+           <button class="btn btn-ghost border-2 border-[#FFC86B] hover:bg-[#FFC86B] hover:text-black hover:border-transparent">Preview</button></a>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <img class="w-full h-full" src="assets/Pro/New Task.png" alt="">
+          <div class="top-0 absolute w-full h-full bg-black opacity-0 group-hover:opacity-70 transition-all ease-linear flex flex-col justify-center items-center p-4 gap-4">
+            <p class="font-bold text-white text-2xl">Noor College </p>
+            <p class="text-white text-center">This is Just For Practice Purpose.</p>
+         <button class="btn btn-ghost border-2 border-[#FFC86B] hover:bg-[#FFC86B] hover:text-black hover:border-transparent">Preview</button></a>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <img class="w-full h-full" src="assets/Pro/Stylo Logo.png" alt="">
+          <div class="top-0 absolute w-full h-full bg-black opacity-0 group-hover:opacity-70 transition-all ease-linear flex flex-col justify-center items-center p-4 gap-4">
+            <p class="font-bold text-white text-2xl">Stylo Logo </p>
+            <p class="text-white text-center">I Tried To Make Stylo Logo and I Make This</p>
+            <button class="btn btn-ghost border-2 border-[#FFC86B] hover:bg-[#FFC86B] hover:text-black hover:border-transparent">Read More</button>
+          </div>
+        </div>
+        <div class="relative group">
+          <img class="w-full h-full" src="assets/Pro/Suit.png" alt="">
+          <div class="top-0 absolute w-full h-full bg-black opacity-0 group-hover:opacity-70 transition-all ease-linear flex flex-col justify-center items-center p-4 gap-4">
+            <p class="font-bold text-white text-2xl">Velentino</p>
+            <p class="text-white text-center">This is Just For Practice Purpose.</p>
+         <a href="https://codewithhammas.github.io/Food-Resturent/"><button class="btn btn-ghost border-2 border-[#FFC86B] hover:bg-[#FFC86B] hover:text-black hover:border-transparent">Preview</button></a>
+          </div>
+        </div>
+        <div class="relative group">
+          <img class="w-full h-full" src="assets/Pro/Ferrari.png" alt="">
+          <div class="top-0 absolute w-full h-full bg-black opacity-0 group-hover:opacity-70 transition-all ease-linear flex flex-col justify-center items-center p-4 gap-4">
+            <p class="font-bold text-white text-2xl">Sport Car</p>
+            <p class="text-white text-center">This is just For Practice Purpose.</p>
+         <a href="https://codewithhammas.github.io/Food-Resturent/"><button class="btn btn-ghost border-2 border-[#FFC86B] hover:bg-[#FFC86B] hover:text-black hover:border-transparent">Preview</button></a>
+          </div>
+        </div>
+      </div>
+      <button class="w-full md:w-fit block mx-auto mt-4 btn btn-ghost border-2 border-[#FFC86B] hover:bg-[#FFC86B] hover:text-black hover:border-transparent">Show More</button>
+    </section>
+
+    <section id="contact" class="p-4 md:px-32 md:py-12 border-t-2 border-[#FFC86B] bg-white/[0.1]">
+      <h2 class="text-4xl mb-6 font-bold  text-center">Contact Me</h2>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+        <button class="w-full md:w-fit btn btn-neutral no-animation text-[#FFC86B]">
+          <i data-lucide="mail"></i>
+          hammasshahsh@gmailcom
+        </button>
+      
+        <button class="w-full md:w-fit btn btn-neutral no-animation text-[#FFC86B]">
+          <i data-lucide="phone"></i>
+          +92 335 8476336
+        </button>
+      
+        <button class="w-full md:w-fit btn btn-neutral no-animation text-[#FFC86B]">
+          <i data-lucide="map-pin"></i>
+          Tando Adam, Sindh, Pakistan.
+        </button>
+      </div>
+    </section>
+  </main>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
